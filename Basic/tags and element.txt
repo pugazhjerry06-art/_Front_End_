@@ -1,0 +1,39 @@
+| Tag             | Purpose                   |
+| --------------- | ------------------------- |
+| `<html>`        | Root of HTML document     |
+| `<head>`        | Contains page information |
+| `<title>`       | Page title                |
+| `<body>`        | Visible page content      |
+| `<h1>` – `<h6>` | Headings                  |
+| `<p>`           | Paragraph                 |
+| `<a>`           | Link                      |
+| `<img>`         | Image                     |
+| `<ul>`          | Unordered list            |
+| `<ol>`          | Ordered list              |
+| `<li>`          | List item                 |
+| `<div>`         | Generic container         |
+| `<span>`        | Inline container          |
+| `<br>`          | Line break                |
+| `<hr>`          | Horizontal line           |
+
+
+
+	
+
+Example
+
+
+1.Heading
+<h1>Welcome</h1>
+
+2.Paragraph
+<p>This is a paragraph.</p>
+
+3.Link
+<a href="#">Click Here</a>
+
+4.Image
+<img src="photo.jpg" alt="Photo">
+
+5.Button
+<button>Submit</button>
