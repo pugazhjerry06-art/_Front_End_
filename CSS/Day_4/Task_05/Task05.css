@@ -1,0 +1,9 @@
+.student{
+    background-color: aqua;
+    color: rgb(25, 111, 186);
+    padding: 40px;
+    margin: 60px;
+    border: 20px solid black;
+    width: 500px;
+    height: 500px;
+}

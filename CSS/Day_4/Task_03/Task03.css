@@ -1,0 +1,26 @@
+.Product{
+    background-color: aqua;
+    padding: 40px;
+    border: 10px solid black;
+    margin: 100px;
+    width: 500px;
+
+}
+
+.Product01{
+    background-color: aqua;
+    padding: 60px;
+    border: 10px solid rgb(151, 9, 9);
+    margin: 150px;
+    width: 700px;
+
+}
+
+.Product02{
+    background-color: aqua;
+    padding: 80px;
+    border: 10px solid rgb(77, 6, 6);
+    margin: 200px;
+    width: 800px;
+
+}

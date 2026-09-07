@@ -1,0 +1,10 @@
+
+.box{
+    background-color: aqua;
+    color: aliceblue;
+    padding: 40px;
+    border: 10px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 500px;
+}
