@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parent {
+    position: relative;
+
+    width: 800px;
+    height: 400px;
+
+    background-color: aqua;
+
+    margin: 50px;
+}
+
+.childbox1{
+    position: absolute;
+
+    top: 0%;
+    right: 0%;
+
+    background-color: aliceblue;
+
+    width: 100px;
+    height: 100px;
+
+    
+
+}
+
+.childbox2{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    background-color: rgb(6, 40, 71);
+
+    width: 100px;
+    height: 100px;
+
+    
+
+}
+
+.childbox3{
+    position: absolute;
+
+    bottom: 0%;
+    left: 0%;
+
+    background-color: rgb(10, 97, 173);
+
+    width: 100px;
+    height: 100px;
+
+    
+
+}
+
+
