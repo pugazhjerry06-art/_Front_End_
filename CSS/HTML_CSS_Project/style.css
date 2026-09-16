@@ -1,65 +1,421 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-a{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Graphik, Arial, sans-serif;
+    color: #33333b;
+}
+
+a {
     text-decoration: none;
 }
 
-.parent{
-    background-color: aliceblue;
-    color: black;
+/* ================= NAVBAR ================= */
+
+.parent {
+    background-color: #fff;
+    width: 100%;
+    height: 78px;
+    padding: 0 28px;
+    
     display: flex;
+    align-items: center;
     justify-content: space-between;
+
+    border-bottom: 1px solid #ddd;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Logo */
+
+.img {
+    width: 150px;
+    height: 55px;
+    object-fit: contain;
+}
+
+/* Navigation */
+
+.nav {
+    display: flex;
     align-items: center;
-    padding: 20px;
-    box-shadow: -2px -5px 3px 5px gray;
-   
-
+    justify-content: center;
+    gap: 42px;
     
-    
+    flex: 1;
+    margin-left: 45px;
 }
-.right{
-    padding: 5px;
+
+.nav > a {
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.nav > a:hover {
+    color: #e5322d;
+}
+
+/* Right side */
+
+.corner {
     display: flex;
-    justify-content: start;
-    gap: 40px;
-
+    align-items: center;
+    gap: 18px;
 }
-.img{
-    width: 130px;
-   
 
-
+.corner > a {
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
 }
-.nav{
-    background-color: rgb(108, 151, 188);
-    color: black;
-    margin-top: 5px;
-    display: flex;
-    gap: 30px;
 
+.corner > a:hover {
+    color: #e5322d;
 }
-.Login{
-    background-color: rgb(254, 254, 254);
+
+/* Sign up */
+
+.btn {
+    background-color: #e5322d;
     color: white;
+
+    padding: 11px 16px;
+
+    border: none;
+    border-radius: 9px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c91f1f;
+}
+
+/* Menu icon */
+
+.icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+/* ================= MAIN ================= */
+
+.main {
+    width: 100%;
+    min-height: 225px;
+
+    padding-top: 115px;
+    padding-bottom: 20px;
+
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
+
+    background-color: #f8f8fc;
+}
+
+/* Heading + paragraph */
+
+.text {
+    width: 100%;
+    max-width: 1300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.text > h2 {
+    color: #33333b;
+
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+.text > p {
+    width: 100%;
+    max-width: 1150px;
+
+    color: #47474f;
+
+    font-size: 24px;
+    line-height: 1.55;
+    font-weight: 400;
+
+    text-align: center;
+}
+
+/* ================= CATEGORY BUTTONS ================= */
+
+.section {
+    width: 100%;
+
+    padding: 18px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f8f8fc;
+}
+
+/* This targets your div with class="section button" */
+
+.section.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     gap: 20px;
-    
-
+    flex-wrap: wrap;
 }
-.btn{
-    background-color: red;
-    color: white;
-    padding: 5px;
-    border-radius: 10px;
 
+.section button {
+    background-color: #fff;
+    color: #47474f;
+
+    font-family: Graphik, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+
+    height: 44px;
+
+    padding: 5px 20px;
+
+    border: 1px solid #d6d6df;
+    border-radius: 25px;
+
+    transition: 0.3s;
 }
-.login1{
-    padding: 20px;
-    margin-bottom: 10px;
+
+.section button:hover {
+    border-color: #47474f;
+    cursor: pointer;
+}
+
+.section button:first-child {
+    background-color: #33333b;
+    color: #fff;
+    border-color: #33333b;
+}
+
+/* ================= PDF CARDS ================= */
+
+.templates {
+    width: 100%;
+
+    padding: 20px 55px 60px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+
+    background-color: #fff;
+}
+
+/* Card */
+
+.cards {
+    background-color: #fff;
+
+    border: 1px solid #d6d6df;
+    border-radius: 16px;
+
+    padding: 30px;
+
+    min-height: 300px;
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+.cards:hover {
+    border-color: #777;
+    transform: translateY(-3px);
+}
+
+/* SVG */
+
+.cards > svg {
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 22px;
+
+    transition: 0.3s;
+}
+
+.cards > svg:hover {
+    transform: scale(1.08);
+}
+
+/* Card heading */
+
+.cards > h3 {
+    color: #33333b;
+
+    font-family: Graphik, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+/* Card paragraph */
+
+.cards > p {
+    color: #707078;
+
+    font-family: Graphik, Arial, sans-serif;
+    font-size: 16px;
+
+    line-height: 1.4;
+}
+
+/* New badge */
+
+.cards > h4 {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    color: #343435;
+    background-color: #d9f5ff;
+
+    padding: 5px 8px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    border-radius: 4px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1400px) {
+
+    .nav {
+        gap: 25px;
+        margin-left: 20px;
+    }
+
+    .nav > a {
+        font-size: 14px;
+    }
+
+    .templates {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .text > h2 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .parent {
+        height: auto;
+        min-height: 70px;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+        margin: 10px 0;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .templates {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .text > h2 {
+        font-size: 36px;
+    }
+
+    .text > p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .parent {
+        padding: 8px 15px;
+    }
+
+    .img {
+        width: 120px;
+    }
+
+    .corner {
+        gap: 8px;
+    }
+
+    .corner > a {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 9px 12px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .main {
+        padding: 120px 20px 20px;
+    }
+
+    .text > h2 {
+        font-size: 30px;
+    }
+
+    .text > p {
+        font-size: 16px;
+    }
+
+    .templates {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .cards {
+        min-height: 260px;
+    }
 }
