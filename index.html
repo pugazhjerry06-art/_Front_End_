@@ -1,145 +1,89 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-```
-<title>Full Stack Development</title>
-
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Full stack Development</title>
 
 <style>
-    .banner-img {
-        height: 400px;
-        object-fit: cover;
-    }
-</style>
-```
+  body{
 
+    background: #1646f2;
+    background: linear-gradient(90deg,rgba(22, 70, 242, 1) 0%, rgba(251, 28, 255, 1) 69%);
+  
+  }
+</style>
 </head>
 
 <body>
 
-```
-<!-- Header -->
-<div class="container text-center py-4">
-    <h1>PUGAZHMANI M</h1>
-    <span>FRONT END DEVELOPMENT</span>
-</div>
 
+      
+  <header >
 
-<!-- Carousel -->
-<div id="carouselExample" class="carousel slide" >
+    <div class="flex flex-row justify-between p-4 bg-white shadow-sm ">
+      <div>
+        <img src="" alt="">
+        <p>Pugazhmani M</p>
+      </div>
 
-    <div class="carousel-inner">
-
-        <!-- Banner 1 -->
-        <div class="carousel-item active" class="banner-img">
-            <img src="assect/banner/01 (1).png"
-                 class="d-block w-100 "
-                 alt="Frontend Development Banner">
-        </div>
-
-        <!-- Banner 2 -->
-        <div class="carousel-item">
-            <img src="assect/banner/01 (4).png"
-                 class="d-block w-100"
-                 alt="HTML CSS Banner">
-        </div>
-
-        <!-- Banner 3 -->
-        <div class="carousel-item">
-            <img src="assect/banner/01 (3).png"
-                 class="d-block w-100"
-                 alt="Bootstrap Banner">
-        </div>
-
-        <!-- Banner 4 -->
-        <div class="carousel-item">
-            <img src="assect/banner/01 (2).png"
-                 class="d-block w-100"
-                 alt="Tailwind CSS Banner">
-        </div>
-
+      <div class="flex flex-row justify-end items-center gap-8">
+        <a href="#">HOME</a>
+        <a href="#">SKILLS</a>
+        <a href="#">PROJECT</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+      </div>
     </div>
 
-
-    <!-- Previous Button -->
-    <button class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev">
-
-        <span class="carousel-control-prev-icon"
-              aria-hidden="true"></span>
-
-        <span class="visually-hidden">Previous</span>
-
-    </button>
-
-
-    <!-- Next Button -->
-    <button class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next">
-
-        <span class="carousel-control-next-icon"
-              aria-hidden="true"></span>
-
-        <span class="visually-hidden">Next</span>
-
-    </button>
-
-</div>
-
-
-<div class="container">
-    <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
-
-<div class="card p-3 w-3" style="width: 18rem;" >
-  <img src="assect/logo/1 (1).png" class="card-img-top" alt="...">
-  <div class="card-body text-center">
-    <a href="HTML/index.html" class="btn btn-primary ">HTML</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;" >
-  <img src="assect/logo/1 (4).png" class="card-img-top" alt="...">
-  <div class="card-body text-center">
-    <a href="CSS/index.html" class="btn btn-primary ">CSS</a>
-  </div>
-</div>
-
-
-<div class="card" style="width: 18rem;" >
-  <img src="assect/logo/1 (3).png" class="card-img-top" alt="...">
-  <div class="card-body text-center">
-    <a href="BS/index.html" class="btn btn-primary ">Bootstrap</a>
-  </div>
-</div>
-
-
-<div class="card " style="width: 20rem;" >
-  <img src="assect/logo/1 (2).png" class="card-img-top" alt="...">
-  <div class="card-body text-center ">
-    <a href="Tailwind CSS/Index.html" class="btn btn-primary ">Tailwind</a>
-  </div>
-</div>
     
+  </header>
+
+  <div>
+    <div>
+      <div class="text-center m-10 text-4xl "> 
+        <h2 class="m-5 font-[poppins] font-bold text-[64px] tracking-[1px] ">
+          PUGAZHMANI <span class="text-blue-500">M</span> 
+        </h2>
+        <p class="font-[poppins] font-medium text-[25px] tracking-[6px] uppercase">FRONT END DEVELOPMENT</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div>
+    <div class="flex flex-row justify-center items-center m-30  gap-5 ">
+      <div class="flex flex-col justify-center items-center rounded-lg bg-white shadow-lg  ">
+        <img src="assect/logo/1 (1).png" alt="" class="w-50 h-50">
+        <a href="HTML/index.html" class="bg-blue-400 m-4 p-2 w-18 rounded-sm text-center">HTML</a>
+      </div>
+
+
+      <!-- I using overflow-hidden tag || 
+       1.why means If the image/background inside the card reaches the edges,
+        the parent's rounded-lg can be hidden by the child element. -->
+
+      <div class="flex flex-col justify-center items-center rounded-lg bg-white overflow-hidden shadow-lg ">
+        <img src="assect/logo/1 (4).png" alt="" class="w-50 h-50">
+        <a href="CSS/index.html" class="bg-blue-400 m-4 p-2 w-18 rounded-sm text-center">CSS</a>
+      </div>
+
+      <div class="flex flex-col justify-center items-center rounded-lg bg-white overflow-hidden shadow-lg ">
+        <img src="assect/logo/1 (3).png" alt="" class="w-50 h-50">
+        <a href="BS/index.html" class="bg-blue-400 m-4 p-2 w-22 rounded-sm text-center">Bootstrap</a>
+      </div>
+
+
+      <div class="flex flex-col justify-center items-center rounded-lg bg-white overflow-hidden shadow-lg ">
+        <img src="assect/logo/1 (2).png" alt="" class="w-50 h-50">
+        <a href="Tailwind CSS/Index.html" class="bg-blue-400 m-4 p-2 w-25 rounded-sm text-center">Tailwind</a>
+      </div>
+
+
 
     </div>
-</div>
-
-
-<!-- Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-```
-
+  </div>  
 </body>
-
 </html>
