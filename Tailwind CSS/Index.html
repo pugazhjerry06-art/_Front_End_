@@ -1,109 +1,733 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>TailWind CSS</title>
+
+    <style>
+
+        /* ================================
+           HERO ANIMATION
+        ================================= */
+
+        @keyframes heroAnimation {
+
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+        .hero-animation {
+            animation: heroAnimation 1s ease forwards;
+        }
+
+
+        /* ================================
+           IMAGE ANIMATION
+        ================================= */
+
+        @keyframes imageAnimation {
+
+            from {
+                opacity: 0;
+                transform: translateX(80px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+        }
+
+        .image-animation {
+            animation: imageAnimation 1.2s ease forwards;
+        }
+
+
+        /* ================================
+           CARD ANIMATION
+        ================================= */
+
+        @keyframes cardAnimation {
+
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+        .card-animation {
+            animation: cardAnimation 0.8s ease forwards;
+        }
+
+
+        /* ================================
+           CARD HOVER
+        ================================= */
+
+        .task-card {
+            transition: all 0.3s ease;
+        }
+
+        .task-card:hover {
+
+            transform: translateY(-12px) scale(1.03);
+
+            box-shadow:
+                0 20px 30px rgba(0, 0, 0, 0.15);
+
+        }
+
+
+        /* ================================
+           NAVIGATION HOVER
+        ================================= */
+
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+
+            color: #f97316;
+
+            transform: translateY(-2px);
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
 
 
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <div
+        class="
+        flex
+        flex-col
+        md:flex-row
+        justify-between
+        items-center
+        gap-4
+        p-4
+        bg-white
+        shadow-sm
+        "
+    >
+
+        <!-- NAME -->
+
+        <div>
+
+            <p
+                class="
+                text-xl
+                sm:text-2xl
+                font-bold
+                text-gray-800
+                "
+            >
+                Pugazhmani M
+            </p>
+
+        </div>
 
 
-  <header >
+        <!-- NAVIGATION -->
 
-    <div class="flex flex-row justify-between p-4  bg-white shadow-sm ">
-      <div>
-        <p></p>
-        <p>Pugazhmani M</p>
-      </div>
+        <div
+            class="
+            flex
+            flex-wrap
+            justify-center
+            items-center
+            gap-4
+            sm:gap-6
+            md:gap-8
+            "
+        >
 
-      <div class="flex flex-row justify-end items-center gap-8">
-        <a href="#">HOME</a>
-        <a href="#">SKILLS</a>
-        <a href="#">PROJECT</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
-      </div>
+            <a
+                href="#"
+                class="nav-link"
+            >
+                HOME
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                SKILLS
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                PROJECT
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                ABOUT
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                CONTACT
+            </a>
+
+        </div>
+
     </div>
 
-    
-  </header>
+</header>
 
 
-  <main class="h-80 bg-[url('../assect/logo/bg.png')] bg-no-repeat flex flex-col justify-center items-center ">
-    <section>
-        <div class="w-20 h-6 bg-[#1646f2] text-white rounded-lg flex flex-col justify-center items-center ">
-            
-            <a href="" class="font-[poppins] font-bold"> TailWind </a>
+
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
+
+<main
+    class="
+    min-h-[320px]
+    md:h-80
+
+    bg-[url('../assect/logo/bg.png')]
+    bg-no-repeat
+    bg-cover
+    bg-center
+
+    flex
+    flex-col
+    justify-center
+    items-center
+
+    px-5
+    "
+>
+
+    <section class="w-full max-w-6xl">
+
+
+        <!-- TAILWIND LABEL -->
+
+        <div
+            class="
+            hero-animation
+
+            w-24
+            h-7
+
+            bg-[#1646f2]
+            text-white
+
+            rounded-lg
+
+            flex
+            justify-center
+            items-center
+
+            mx-auto
+            lg:mx-0
+
+            mb-5
+            "
+        >
+
+            <a
+                href="#"
+                class="
+                font-[poppins]
+                font-bold
+                text-sm
+                "
+            >
+                TailWind
+            </a>
+
         </div>
 
-        <div class="flex flex-row justify-center items-center">
-            
-            <div>
-                <h2 class="text-[50px] font-[Poppins] text-white font-bold leading-[1.2]">Welcome To <span class="text-blue-500"> TailWind</span>  World </h2>
-                <p class="text-[21px] font-[poppins] text-white font-normal leading-[1.5]">Explore practice yourTailWind skills with daily tasks.</p>
+
+
+        <!-- HERO CONTENT -->
+
+        <div
+            class="
+            flex
+            flex-col
+            lg:flex-row
+
+            justify-center
+            items-center
+
+            gap-8
+            lg:gap-20
+            "
+        >
+
+
+            <!-- TEXT -->
+
+            <div
+                class="
+                hero-animation
+
+                text-center
+                lg:text-left
+
+                "
+            >
+
+                <h2
+                    class="
+                    text-3xl
+                    sm:text-4xl
+                    md:text-5xl
+
+                    font-[Poppins]
+                    text-white
+                    font-bold
+
+                    leading-[1.2]
+                    "
+                >
+
+                    Welcome To
+
+                    <span class="text-blue-500">
+                        TailWind
+                    </span>
+
+                    World
+
+                </h2>
+
+
+                <p
+                    class="
+                    text-base
+                    sm:text-lg
+                    md:text-[21px]
+
+                    font-[poppins]
+
+                    text-white
+                    font-normal
+
+                    leading-[1.5]
+
+                    mt-3
+                    "
+                >
+                    Explore practice your TailWind skills
+                    with daily tasks.
+                </p>
+
             </div>
 
-            <div>
-                <p class="text-white font-[poppins] text-[20px] ml-23">TailWind</p>
-                <img src="../assect/logo/TailWind.png" class="h-25 w-60" alt="">
+
+
+            <!-- IMAGE -->
+
+            <div
+                class="
+                image-animation
+
+                flex
+                flex-col
+                justify-center
+                items-center
+                "
+            >
+
+                <p
+                    class="
+                    text-white
+                    font-[poppins]
+                    text-lg
+                    md:text-[20px]
+                    "
+                >
+                    TailWind
+                </p>
+
+
+                <img
+                    src="../assect/logo/TailWind.png"
+                    class="
+                    h-20
+                    sm:h-24
+                    md:h-25
+
+                    w-48
+                    sm:w-56
+                    md:w-60
+
+                    object-contain
+
+                    transition
+                    duration-500
+
+                    hover:scale-110
+                    "
+                    alt="TailWind"
+                >
+
             </div>
+
         </div>
+
     </section>
-  </main>
 
-<main class="max-w-6xl mx-auto px-6 py-12">
-
-        <div class="flex flex-wrap justify-center gap-25">
-
-                <a href="../index.html"
-                    class="fixed top-6 right-10 mt-20 z-50 bg-orange-700 hover:bg-orange-900 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
-                    ← Back
-                </a>
-
-
-        
-            <div
-                class="bg-white w-64 min-h-48 p-7 rounded-3xl border border-orange-100 shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-
-                <h2 class="text-2xl  font-bold text-orange-800 mb-5">
-                    Day-1
-                </h2>
-
-                <a href="Day_01/index.html"
-                    class="block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-5 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                    Task-1
-                </a>
-
-            </div>
-
-
-            <div
-                class="bg-white w-64 min-h-48 p-7 rounded-3xl border border-orange-100 shadow-md hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-
-                <h2 class="text-2xl font-bold text-orange-800 mb-5">
-                    Day-2
-                </h2>
-
-                <a href="Day_02/project/index.html"
-                    class="block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-5 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                    Task-1
-                </a>
-
-            </div>
+</main>
 
 
 
+<!-- =====================================================
+     TASK SECTION
+===================================================== -->
 
+<main
+    class="
+    max-w-6xl
+    mx-auto
+
+    px-6
+    py-12
+    "
+>
+
+
+    <!-- BACK BUTTON -->
+
+    <a
+        href="../index.html"
+
+        class="
+        fixed
+
+        top-6
+        right-4
+        sm:right-10
+
+        mt-20
+
+        z-50
+
+        bg-orange-700
+        hover:bg-orange-900
+
+        text-white
+        font-semibold
+
+        px-4
+        sm:px-6
+
+        py-2
+        sm:py-3
+
+        rounded-full
+
+        shadow-lg
+
+        transition-all
+        duration-300
+
+        hover:scale-105
+
+        "
+    >
+
+        ← Back
+
+    </a>
+
+
+
+    <!-- TASK CARDS -->
+
+    <div
+        class="
+        grid
+
+        grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-3
+
+        justify-items-center
+
+        gap-8
+        lg:gap-10
+
+        "
+    >
+
+
+        <!-- =========================================
+             DAY 1
+        ========================================== -->
+
+        <div
+            class="
+            task-card
+            card-animation
+
+            bg-white
+
+            w-full
+            max-w-64
+
+            min-h-48
+
+            p-7
+
+            rounded-3xl
+
+            border
+            border-orange-100
+
+            shadow-md
+
+            "
+        >
+
+            <h2
+                class="
+                text-2xl
+                font-bold
+                text-orange-800
+                mb-5
+                "
+            >
+                Day-1
+            </h2>
+
+
+            <a
+                href="Day_01/index.html"
+
+                class="
+                block
+
+                text-center
+
+                bg-orange-500
+                hover:bg-orange-600
+
+                text-white
+
+                font-semibold
+
+                py-3
+                px-5
+
+                rounded-full
+
+                transition-all
+                duration-300
+
+                hover:scale-105
+                hover:shadow-lg
+                "
+            >
+                Task-1
+            </a>
 
         </div>
 
-    </main>
+
+
+        <!-- =========================================
+             DAY 2
+        ========================================== -->
+
+        <div
+            class="
+            task-card
+            card-animation
+
+            bg-white
+
+            w-full
+            max-w-64
+
+            min-h-48
+
+            p-7
+
+            rounded-3xl
+
+            border
+            border-orange-100
+
+            shadow-md
+            "
+
+            style="animation-delay: 0.15s;"
+        >
+
+            <h2
+                class="
+                text-2xl
+                font-bold
+                text-orange-800
+                mb-5
+                "
+            >
+                Day-2
+            </h2>
+
+
+            <a
+                href="Day_02/project/index.html"
+
+                class="
+                block
+
+                text-center
+
+                bg-orange-500
+                hover:bg-orange-600
+
+                text-white
+
+                font-semibold
+
+                py-3
+                px-5
+
+                rounded-full
+
+                transition-all
+                duration-300
+
+                hover:scale-105
+                hover:shadow-lg
+                "
+            >
+                Task-1
+            </a>
+
+        </div>
 
 
 
-    
+        <!-- =========================================
+             DAY 3
+        ========================================== -->
+
+        <div
+            class="
+            task-card
+            card-animation
+
+            bg-white
+
+            w-full
+            max-w-64
+
+            min-h-48
+
+            p-7
+
+            rounded-3xl
+
+            border
+            border-orange-100
+
+            shadow-md
+            "
+
+            style="animation-delay: 0.3s;"
+        >
+
+            <h2
+                class="
+                text-2xl
+                font-bold
+                text-orange-800
+                mb-5
+                "
+            >
+                Day-3
+            </h2>
+
+
+            <a
+                href="#"
+
+                class="
+                block
+
+                text-center
+
+                bg-orange-500
+                hover:bg-orange-600
+
+                text-white
+
+                font-semibold
+
+                py-3
+                px-5
+
+                rounded-full
+
+                transition-all
+                duration-300
+
+                hover:scale-105
+                hover:shadow-lg
+                "
+            >
+                Task-1
+            </a>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+
 </body>
 </html>
+```
