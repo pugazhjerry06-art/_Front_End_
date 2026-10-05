@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        function checkevenodd(number){
+            
+                if(number % 2 === 0){
+                    console.log("Even Number")
+                }else{
+                    console.log("odd number")
+                }
+            
+        }
+        checkevenodd(10)
+
+
+        function findLargest(a,b){
+            if(a > b){
+                return a ;
+            }else{
+
+                return b ; 
+
+            }
+        }
+        console.log(findLargest(25,40));
+
+
+        function checkvote(age){
+            if(age > 18 ){
+                console.log("eligible to vote")
+            }else{
+                console.log("not eligible to vote ")
+            }
+        }
+        checkvote(20)
+
+
+
+        let arr = [10,20,30,40,50];
+        let sum = 0
+        const adds = (added) => {
+            for(let a = 0 ; a < arr .length ; a++){
+                sum += added[a]
+
+            }
+            return sum;
+        }
+        console.log(adds(arr))
+
+    </script>
+</body>
+</html>
