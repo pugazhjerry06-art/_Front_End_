@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <script>
+        //Task - 1
+        let salary = 20000;
+        salary = 25000;
+        console.log(salary);
+
+        // Task - 2 
+        const country = "india";
+    
+        console.log ( "my country is " ,country);
+
+        // Task -3
+        let name = "arun";
+        let age = 25;
+        console.log(`my name is ${name} and i am ${age} years old `)
+
+        // task - 4
+        let price = 500;
+        let quantity = 4;
+        console.log(price * quantity);
+        console.log(`${price}` * `${quantity}`)
+
+
+        // Task - 5
+        const greet = (name) => {
+            console.log(`welcome ${name} `);
+
+        }
+
+        greet("arun")
+        greet("guest")
+
+        // Task - 6 
+        const color = ["red", "green","blue"];
+        const [a,b,c] = color
+        console.log(a , b,c );
+
+
+        //Task - 7
+        const student = {
+            names : "Arun",
+            ages : 20,
+            city :"chennai"
+        };
+
+        const { names ,ages,city}= student
+        console.log(names);
+        console.log(ages);
+        console.log(city);
+    </script>
+</body>
+</html>
