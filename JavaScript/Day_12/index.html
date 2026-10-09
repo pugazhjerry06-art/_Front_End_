@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+
+    <h1 id="title">Hello World</h1>
+
+    <p class="p">the same class name</p>
+    <p class="p">the same class name</p>
+    <p class="p">the same class name</p>
+
+
+
+
+    <script>
+        const a = document.getElementById("title");
+        a.innerHTML= "Hello to Javascript";
+        a.style.color="red";
+        a.style.fontSize = "30px"
+        console.log(a);
+
+
+        //task - 2
+
+        const b = document.getElementsByClassName("p");
+            b[0].style.color="red";
+            b[1].style.backGround="yellow";
+            b[2].style.fontSize="25px";
+            console.log(b);
+
+        
+        //task - 3
+
+        
+    
+
+
+    </script>
+</body>
+</html>
